@@ -1,0 +1,46 @@
+
+%Préambule du document :
+\documentclass[11pt]{article}
+
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{amsmath,amsfonts,amssymb}
+\title{Math de l'ingénieur}
+\author{Florent Gerbaud}
+\date{October 2022}
+
+%Corps du document :
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \section{Calcul différentiel}
+        \subsection{Dérivée}
+            \subsubsection{Définition Dérivée}
+                \begin{center}
+                    Soit $\Omega$ un ouvert, \ 
+                    Soit $f: \mathbb{R}^n \longrightarrow \mathbb{R}^m $ \\
+                    %$f(x)=\left( a \ b \right)$
+                    $f(x)=\begin{pmatrix}
+                     f_1(x)\\
+                     f_2(x)\\
+                    \vdots\\
+                     f_m(x)
+                    \end{pmatrix}$=$f(x_1,x_2,...,x_m)$
+                \end{center}
+               
+                On dit que f est dérivable, (ou différentiable) en un point $x\in \Omega$ s'il éxiste une AL $L(x):\mathbb{R}^n \longrightarrow \mathbb{R}^m$ tel que : \\ \\
+                $\forall h \in \mathbb{R}^n, x+h \in \Omega$, 
+                $f(x+h)=f(x)+L(x).h+o(|h|_{\mathbb{R}^n})$ et tel que $L(x) \in M_{m \times n}$
+                \\ la dérivée est L(x)
+                    
+        \section{}
+        
+ 
+\end{document}
